@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+</head>
+<style>
+   *{
+       list-style: none;
+       text-align: bottom;
+   }
+    body {
+        text-align: center;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5yLfskrrvVZszDc26puwUfXfGpF4iTMapHg&usqp=CAU");
+    }
+    button {
+        background-color:whitesmoke;
+        border-radius: 15%;
+        border-color: turquoise;
+      
+    }
+    button:hover{
+        background-color: teal;
+        
+    }
+   
+   
+</style>
+<body>
+    <div>
+        <h1 style="color: pink;">TODO APP</h1>
+    </div>
+    <div></div>
+    <div style="background-color: bisque;">
+    <div >
+        <input placeholder="What to do??" type="text" id="todo-item">
+        <button onclick="addTodo()" class="add" >ADD ITEM</button>
+        <button onclick="deleteAll()" class="del">DELETE ALL</button>
+    </div>
+
+    <div style="background-color: bisque;">
+        <ul id="list">
+           
+          
+        </ul>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
